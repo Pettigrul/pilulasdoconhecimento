@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560" width="1600" height="560">
+  <defs>
+    <filter id="aura" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="borrao"/>
+      <feFlood flood-color="#3D7BFF" flood-opacity=".75"/>
+      <feComposite in2="borrao" operator="in" result="brilho"/>
+      <feMerge><feMergeNode in="brilho"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="gelo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4EAFB"/></linearGradient>
+  </defs>
+  
+  <text x="810" y="150" text-anchor="middle" font-family="Poppins SemiBold, Poppins" font-weight="600" font-size="72" letter-spacing="20" fill="#F6F7FE" filter="url(#aura)">PÍLULAS DO</text>
+  <text x="800" y="310" text-anchor="middle" font-family="Poppins Black, Poppins" font-weight="900" font-size="168" letter-spacing="4" fill="url(#gelo)" filter="url(#aura)">CONHECIMENTO</text>
+  <g transform="translate(550 370)">
+    <clipPath id="cap"><rect width="500" height="22" rx="11"/></clipPath>
+    <g clip-path="url(#cap)"><rect width="250" height="22" fill="#005FFD"/><rect x="250" width="250" height="22" fill="#F6F7FE"/></g>
+  </g>
+  <text x="770" y="478" text-anchor="end" font-family="Poppins SemiBold, Poppins" font-weight="600" font-size="46" letter-spacing="2" fill="#F6F7FE">Auditoria Interna</text>
+  <rect x="797" y="438" width="6" height="46" rx="3" fill="#005FFD"/>
+  <text x="830" y="478" text-anchor="start" font-family="Poppins SemiBold, Poppins" font-weight="600" font-size="46" letter-spacing="2" fill="#F6F7FE">Banco BV</text>
+</svg>

@@ -1,0 +1,55 @@
+/* Pilulas do Conhecimento — componentes em CSS puro, prefixo pc- */
+.pc-palco {
+  background: radial-gradient(ellipse 70% 80% at 50% 42%, var(--azul-nucleo) 0%, var(--azul-marinho) 55%, var(--azul-abismo) 100%);
+  color: var(--branco-gelo);
+  font-family: var(--font-sans);
+}
+
+/* Assinatura */
+.pc-assinatura { display: flex; flex-direction: column; align-items: center; gap: var(--espaco-1); text-align: center; }
+.pc-assinatura__sobre { font-weight: 600; font-size: 0.33em; letter-spacing: .3em; margin-right: -.3em; text-transform: uppercase; color: var(--branco-gelo); text-shadow: 0 0 18px rgba(61,123,255,.6); }
+.pc-assinatura__nome { font-weight: 900; font-size: 1em; line-height: 1; letter-spacing: .01em; text-transform: uppercase; color: var(--branco-gelo); text-shadow: 0 0 24px rgba(61,123,255,.75); }
+.pc-assinatura__barra { width: 4.1em; margin-top: .22em; }
+.pc-assinatura__sub { display: flex; align-items: center; gap: .35em; font-weight: 600; font-size: .2em; letter-spacing: .04em; color: var(--branco-gelo); margin-top: .15em; }
+.pc-assinatura__sub i { display: block; width: .18em; height: 1.1em; border-radius: var(--raio-capsula); background: var(--azul-eletrico); }
+
+/* Barra-capsula (assinatura e progresso) */
+.pc-barra { position: relative; height: 12px; border-radius: var(--raio-capsula); background: var(--branco-gelo); box-shadow: inset 0 0 0 1px var(--linha); overflow: hidden; }
+.pc-barra > span { position: absolute; inset: 0 auto 0 0; width: var(--pc-progresso, 50%); background: var(--azul-eletrico); border-radius: var(--raio-capsula) 0 0 var(--raio-capsula); }
+.pc-barra--fina { height: 6px; }
+
+/* Selo pilula: numero azul + rotulo branco */
+.pc-selo { display: inline-flex; align-items: stretch; border-radius: var(--raio-capsula); overflow: hidden; font-family: var(--font-sans); font-weight: 700; font-size: 18px; letter-spacing: .06em; text-transform: uppercase; box-shadow: var(--brilho-acento); }
+.pc-selo__num { background: var(--azul-eletrico); color: var(--sobre-acento); padding: 8px 14px 8px 18px; }
+.pc-selo__txt { background: var(--branco-gelo); color: var(--azul-abismo); padding: 8px 18px 8px 14px; }
+
+/* Cartao de conceito */
+.pc-cartao { background: var(--superficie); color: var(--texto); border: 1px solid var(--linha); border-radius: var(--raio-cartao); padding: var(--espaco-4); box-shadow: var(--sombra-cartao); display: flex; flex-direction: column; gap: var(--espaco-2); min-width: 0; }
+.pc-cartao--realce { background: var(--superficie-realce); }
+.pc-cartao__rotulo { font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--texto-suave); }
+.pc-cartao__titulo { font-size: 22px; font-weight: 700; line-height: 1.25; margin: 0; }
+.pc-cartao__texto { font-size: 16px; line-height: 1.5; margin: 0; color: var(--texto); }
+.pc-cartao--realce .pc-cartao__rotulo { color: var(--texto); opacity: .85; }
+
+/* Lista com marcador de capsula */
+.pc-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--espaco-2); font-family: var(--font-sans); color: var(--texto); }
+.pc-lista li { display: grid; grid-template-columns: 28px 1fr; gap: 14px; align-items: baseline; font-size: 18px; line-height: 1.45; }
+.pc-lista li::before { content: ""; width: 28px; height: 11px; border-radius: var(--raio-capsula); background: linear-gradient(90deg, var(--azul-eletrico) 50%, var(--branco-gelo) 50%); transform: rotate(-20deg) translateY(-2px); box-shadow: 0 0 0 1px var(--linha); }
+.pc-lista strong { font-weight: 600; }
+.pc-lista em { font-style: normal; color: var(--destaque); font-weight: 600; }
+
+/* Sinal de risco */
+.pc-sinal { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: var(--raio-capsula); border: 2px solid currentColor; font-family: var(--font-sans); font-size: 14px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.pc-sinal::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.pc-sinal--atencao { color: var(--sinal-atencao); }
+.pc-sinal--critico { color: var(--sinal-critico); }
+.pc-sinal--ok { color: var(--destaque); }
+
+/* Rodape de slide */
+.pc-rodape { display: flex; align-items: center; gap: var(--espaco-3); font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: .04em; color: var(--texto-suave); }
+.pc-rodape__marca { display: inline-flex; align-items: center; gap: 10px; }
+.pc-rodape__marca i { width: 3px; height: 16px; border-radius: var(--raio-capsula); background: var(--acento); }
+.pc-rodape__barra { flex: 1; min-width: 60px; }
+.pc-rodape__pag { font-variant-numeric: tabular-nums; color: var(--texto); }
+
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }

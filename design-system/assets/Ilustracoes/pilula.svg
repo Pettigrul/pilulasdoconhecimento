@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 96" width="240" height="96">
+  <defs>
+    <linearGradient id="brilhoAzul" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3D86FF"/><stop offset=".45" stop-color="#005FFD"/><stop offset="1" stop-color="#0037BB"/>
+    </linearGradient>
+    <linearGradient id="brilhoBranco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F6F7FE"/><stop offset="1" stop-color="#B9C8F2"/>
+    </linearGradient>
+    <clipPath id="metadeEsq"><rect x="0" y="0" width="120.0" height="96"/></clipPath>
+    <clipPath id="metadeDir"><rect x="120.0" y="0" width="120.0" height="96"/></clipPath>
+  </defs>
+  <rect x="0" y="0" width="240" height="96" rx="48.0" fill="url(#brilhoAzul)" clip-path="url(#metadeEsq)"/>
+  <rect x="0" y="0" width="240" height="96" rx="48.0" fill="url(#brilhoBranco)" clip-path="url(#metadeDir)"/>
+  <rect x="28.799999999999997" y="15.36" width="182.4" height="13.440000000000001" rx="6.720000000000001" fill="#FFFFFF" opacity=".45"/>
+</svg>

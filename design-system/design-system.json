@@ -1,0 +1,34 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {"v": 1, "at": "2026-09-29T16:20:00Z"},
+  "title": "Pílulas do Conhecimento",
+  "namespace": "PilulasDoConhecimento",
+  "libraries": [],
+  "sections": {},
+  "groups": ["Marca", "Ilustracoes", "Fundos"],
+  "assetGroups": {
+    "Marca": {"name": "Marca", "tile": "l", "order": ["lockup-pilulas-do-conhecimento.png", "lockup-pilulas-do-conhecimento.svg", "barra-assinatura.svg"], "files": {
+      "lockup-pilulas-do-conhecimento.png": {"name": "lockup-pilulas-do-conhecimento.png", "blob": "23b14e975d07c7b487d3cdd26d1bd776", "size": 43748, "type": "image/png"},
+      "lockup-pilulas-do-conhecimento.svg": {"name": "lockup-pilulas-do-conhecimento.svg", "blob": "fcee824a3202660c531786cf3b5314cd", "size": 1785, "type": "image/svg+xml"},
+      "barra-assinatura.svg": {"name": "barra-assinatura.svg", "blob": "0f790784188b55f047e2f7dd2a9a75b5", "size": 356, "type": "image/svg+xml"}
+    }},
+    "Ilustracoes": {"name": "Ilustracoes", "tile": "m", "order": ["frasco-cerebro.png", "frasco-cerebro.svg", "pilula.png", "pilula.svg", "icone-cerebro.svg", "chao-de-pilulas.png"], "files": {
+      "frasco-cerebro.png": {"name": "frasco-cerebro.png", "blob": "3196cece5eec4f41ba3249cfe5901dd3", "size": 32470, "type": "image/png"},
+      "frasco-cerebro.svg": {"name": "frasco-cerebro.svg", "blob": "6fc60e41ceaa991b6d92d8fb50662251", "size": 2851, "type": "image/svg+xml"},
+      "pilula.png": {"name": "pilula.png", "blob": "641261c7aafdc8d9e0285e0b770ed477", "size": 6121, "type": "image/png"},
+      "pilula.svg": {"name": "pilula.svg", "blob": "93925d4c12713c7db29afcc4fa7e3478", "size": 1136, "type": "image/svg+xml"},
+      "icone-cerebro.svg": {"name": "icone-cerebro.svg", "blob": "1f81e25ba154c347e67e526226d8a198", "size": 795, "type": "image/svg+xml"},
+      "chao-de-pilulas.png": {"name": "chao-de-pilulas.png", "blob": "1795b4f65a3e11b245693a959323f59a", "size": 198730, "type": "image/png"}
+    }},
+    "Fundos": {"name": "Fundos", "tile": "l", "order": ["capa-pronta-1920x1080.png", "fundo-palco-1920x1080.png", "fundo-secao-1920x1080.png", "fundo-conteudo-1920x1080.png"], "files": {
+      "capa-pronta-1920x1080.png": {"name": "capa-pronta-1920x1080.png", "blob": "7b0fc5a4ad03aa74810f8b2fad43e0eb", "size": 387195, "type": "image/png"},
+      "fundo-palco-1920x1080.png": {"name": "fundo-palco-1920x1080.png", "blob": "a8372ddf691208eb85edd631ebdb2949", "size": 191324, "type": "image/png"},
+      "fundo-secao-1920x1080.png": {"name": "fundo-secao-1920x1080.png", "blob": "773fd29a1590801733fe7a383a1f4eed", "size": 208963, "type": "image/png"},
+      "fundo-conteudo-1920x1080.png": {"name": "fundo-conteudo-1920x1080.png", "blob": "824a5e9974ca607e530182976b9e4480", "size": 155588, "type": "image/png"}
+    }}
+  },
+  "blobs": {},
+  "docs": {"sections": []},
+  "lastChange": {"by": "Pedro", "at": "2026-09-29T16:20:00Z", "via": "Claude", "note": "Sistema criado a partir da vinheta de abertura"}
+}

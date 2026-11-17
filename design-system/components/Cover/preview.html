@@ -1,0 +1,65 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Pílulas do Conhecimento</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--fundo); color:var(--texto); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:288px; overflow:hidden; }
+  .faixa { position:absolute; top:0; left:0; width:960px; height:112px; }
+  .faixa svg { display:block; width:960px; height:112px; }
+  .nucleo { fill:var(--azul-nucleo); }
+  .capsula { fill:var(--azul-capsula); }
+  .eletrico { fill:var(--azul-eletrico); }
+  .claro { fill:var(--destaque); }
+  .azul { fill:var(--azul-eletrico); }
+  .branca { fill:var(--branco-gelo); }
+  .blk { rx:var(--raio-cartao); }
+  .pil { rx:8px; }
+  .words { position:absolute; left:var(--espaco-6); right:var(--espaco-6); bottom:var(--espaco-6); }
+  .name { margin:0; font-size:60px; line-height:.95; font-weight:800; letter-spacing:-.01em; color:var(--texto); white-space:nowrap; }
+  .tag { margin:var(--espaco-1) 0 0 3px; font-size:14px; line-height:20px; color:var(--texto-suave); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="faixa" aria-hidden="true">
+<svg viewBox="0 0 960 112" width="960" height="112">
+<!--
+  blocos     azul-nucleo 420 (o centro de luz da vinheta, o maior) · azul-capsula 192 · azul-eletrico 128 · destaque (azul claro no palco, azul-capsula no papel) sangrando pela direita; faixa de 112px no topo, ~39% da capa
+  arranjo    faixa de blocos desiguais em linha, sangrando pelo topo com cantos raio-cartao embaixo, gutters espaco-2; o nome é largo demais para a zona de 440px, então vai por baixo
+  padrão     pílulas metade azul-eletrico, metade branco-gelo, escolhidas porque a cápsula dividida é o elemento central da marca (README: "Metade azul, metade branca"); 17 cápsulas a passo espaco-6 caindo sobre os blocos como o chão da vinheta
+  escalas    passo espaco-6 (48); gutter espaco-2 (16); cantos raio-cartao (24); cápsula 48x16, rx metade da altura (raio-capsula)
+-->
+<rect class="nucleo blk" x="0" y="-24" width="420" height="136" rx="24"/>
+<rect class="capsula blk" x="436" y="-24" width="192" height="136" rx="24"/>
+<rect class="eletrico blk" x="644" y="-24" width="128" height="136" rx="24"/>
+<rect class="claro blk" x="788" y="-24" width="196" height="136" rx="24"/>
+<g transform="translate(24 52) rotate(31 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(72 64) rotate(11 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(120 28) rotate(22 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(168 28) rotate(-9 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(216 28) rotate(29 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(264 40) rotate(-32 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(312 64) rotate(-6 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(360 40) rotate(-29 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(408 64) rotate(-31 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(456 76) rotate(-26 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(504 40) rotate(9 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(552 76) rotate(31 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(600 76) rotate(6 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(648 28) rotate(33 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(696 28) rotate(4 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(744 40) rotate(-15 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+<g transform="translate(792 40) rotate(3 24 8)"><rect class="branca pil" width="48" height="16" rx="8"/><rect class="azul pil" width="24" height="16" rx="8"/><rect class="azul" x="12" width="12" height="16"/></g>
+</svg>
+</div>
+<div class="words">
+<p class="name">Pílulas do Conhecimento</p>
+<p class="tag">Auditoria Interna | Banco BV. Uma dose curta de conhecimento por aula.</p>
+</div>
+</div>
+</body>
+</html>
